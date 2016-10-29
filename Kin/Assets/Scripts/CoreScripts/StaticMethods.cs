@@ -57,4 +57,7 @@ public class StaticMethods {
 		return (v2 - v1).magnitude;
 	}
 
+	public static bool AlmostEquals(float f1, float f2, float threshold) {
+		return Mathf.Abs(f1 - f2) < threshold;
+	}
 }
