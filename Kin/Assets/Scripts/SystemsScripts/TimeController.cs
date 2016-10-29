@@ -42,9 +42,24 @@ public class TimeController : MonoBehaviour {
 			ProgressDay (1);
 			timeLeft = dayLength;
 		}
+
+       // RenderSettings.ambientLight = Color.red;
+
+
+
+
+
+
+
+
+
 		if (kin >= 1872000 || baktun >= 13) {
 			//game ends
 		}
+	}
+
+	public float getDayLength() {
+		return dayLength;
 	}
 
 	/// <summary>
