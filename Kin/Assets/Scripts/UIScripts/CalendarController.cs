@@ -19,7 +19,8 @@ public class CalendarController : MonoBehaviour {
 	//9
 	public GameObject miniBoi;
 
-	TimeController time;
+	public GameObject sound;
+	AudioSource source;
 
 	bool lerping = false;
 	Vector3 initPos;
@@ -49,6 +50,8 @@ public class CalendarController : MonoBehaviour {
 		mediumBoiRotation = Quaternion.identity;
 		smallBoiRotation = Quaternion.identity;
 		miniBoiRotation = Quaternion.identity;
+
+		source = sound.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -67,6 +70,8 @@ public class CalendarController : MonoBehaviour {
 		mediumBoiInit = mediumBoi.transform.localRotation;
 		smallBoiInit = smallBoi.transform.localRotation;
 		miniBoiInit = miniBoi.transform.localRotation;
+
+		source.Play();
 
 		lerping = true;
 	}
