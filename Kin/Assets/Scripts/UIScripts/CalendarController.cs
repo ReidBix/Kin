@@ -23,8 +23,6 @@ public class CalendarController : MonoBehaviour {
 	AudioSource source;
 
 	bool lerping = false;
-	Vector3 initPos;
-	float initSize;
 	public const float LERP_TIME = 3.45f;
 	float transTime = 0.0f;
 
@@ -70,6 +68,8 @@ public class CalendarController : MonoBehaviour {
 		mediumBoiInit = mediumBoi.transform.localRotation;
 		smallBoiInit = smallBoi.transform.localRotation;
 		miniBoiInit = miniBoi.transform.localRotation;
+
+		transTime = 0.0f;
 
 		source.Play();
 
