@@ -32,7 +32,6 @@ public class TimeController : MonoBehaviour {
 	void Start () {
 		timeLeft = dayLength;
 		kin = 1 + Mathf.Abs(dayMod);
-		Debug.Log(kin);
 
 		CalculateCalendar ();
 		gameObject.GetComponent<CalendarController>().CalendarSet(kin - 1);
@@ -44,7 +43,6 @@ public class TimeController : MonoBehaviour {
 		{
 			ProgressDay (1);
 			timeLeft = dayLength;
-			Debug.Log(kin);
 		}
 
        // RenderSettings.ambientLight = Color.red;

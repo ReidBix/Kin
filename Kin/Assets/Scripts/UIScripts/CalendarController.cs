@@ -79,8 +79,8 @@ public class CalendarController : MonoBehaviour {
 	public void CalendarSet(int kin) {
 		bigBoiCount = miniBoiCount = kin;
 		mediumBoiCount = smallBoiCount = kin / 20;
-		Debug.Log("Big Boi Count: " + bigBoiCount + ", Medium Boi Count: " + mediumBoiCount +
-			", Small Boi Count: " + smallBoiCount + ", Mini Boi Count: " + miniBoiCount);
+		//Debug.Log("Big Boi Count: " + bigBoiCount + ", Medium Boi Count: " + mediumBoiCount +
+			//", Small Boi Count: " + smallBoiCount + ", Mini Boi Count: " + miniBoiCount);
 		bigBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/20) * bigBoiCount);
 		mediumBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (-360/18) * mediumBoiCount);
 		smallBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/13) * smallBoiCount);
@@ -93,8 +93,8 @@ public class CalendarController : MonoBehaviour {
 		if (bigBoiCount % 20 == 0) {
 			mediumBoiCount++; smallBoiCount++;
 		}
-		Debug.Log("Big Boi Count: " + bigBoiCount + ", Medium Boi Count: " + mediumBoiCount +
-			", Small Boi Count: " + smallBoiCount + ", Mini Boi Count: " + miniBoiCount);
+		//Debug.Log("Big Boi Count: " + bigBoiCount + ", Medium Boi Count: " + mediumBoiCount +
+			//", Small Boi Count: " + smallBoiCount + ", Mini Boi Count: " + miniBoiCount);
 		bigBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/20) * bigBoiCount);
 		mediumBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (-360/18) * mediumBoiCount);
 		smallBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/13) * smallBoiCount);
