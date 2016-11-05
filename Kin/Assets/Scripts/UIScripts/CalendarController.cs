@@ -76,6 +76,18 @@ public class CalendarController : MonoBehaviour {
 		lerping = true;
 	}
 
+	public void CalendarSet(int kin) {
+		bigBoiCount = miniBoiCount = kin;
+		mediumBoiCount = smallBoiCount = kin / 20;
+		Debug.Log("Big Boi Count: " + bigBoiCount + ", Medium Boi Count: " + mediumBoiCount +
+			", Small Boi Count: " + smallBoiCount + ", Mini Boi Count: " + miniBoiCount);
+		bigBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/20) * bigBoiCount);
+		mediumBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (-360/18) * mediumBoiCount);
+		smallBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (360/13) * smallBoiCount);
+		miniBoiFinalRot = Quaternion.Euler(0.0f, 0.0f, (-360/9) * miniBoiCount);
+		CalendarUpdate();
+	}
+
 	public void CalendarIncrement() {
 		bigBoiCount++;  miniBoiCount++;
 		if (bigBoiCount % 20 == 0) {

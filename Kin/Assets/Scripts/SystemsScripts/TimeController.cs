@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class TimeController : MonoBehaviour {
 	public float dayLength = 420.0f;
@@ -31,8 +32,10 @@ public class TimeController : MonoBehaviour {
 	void Start () {
 		timeLeft = dayLength;
 		kin = 1 + Mathf.Abs(dayMod);
+		Debug.Log(kin);
 
 		CalculateCalendar ();
+		gameObject.GetComponent<CalendarController>().CalendarSet(kin - 1);
 	}
 
 	void Update(){
@@ -41,6 +44,7 @@ public class TimeController : MonoBehaviour {
 		{
 			ProgressDay (1);
 			timeLeft = dayLength;
+			Debug.Log(kin);
 		}
 
        // RenderSettings.ambientLight = Color.red;
@@ -69,15 +73,17 @@ public class TimeController : MonoBehaviour {
 	private void ProgressDay(int byNum) {
 		kin += Mathf.Abs(byNum);
 		CalculateCalendar ();
+		gameObject.GetComponent<CalendarController>().CalendarIncrement();
 	}
 
 	/// <summary>
 	/// Calculates the calendar.
 	/// </summary>
 	private void CalculateCalendar(){
-		uinal = kin % 20;
-		tun = uinal % 18;
-		katun = tun % 20;
-		baktun = katun % 20;
+		uinal = kin / 20;
+		tun = uinal / 18;
+		katun = tun / 20;
+		baktun = katun / 20;
+		//gameObject.GetComponent<CalendarController>().CalendarSet(kin);
 	}
 }
