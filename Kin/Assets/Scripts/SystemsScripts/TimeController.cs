@@ -7,6 +7,8 @@ public class TimeController : MonoBehaviour {
 	private float timeLeft;
 	public int dayMod = 0;
 
+	public GameObject calendar;
+
 	/// <summary>
 	/// The day.
 	/// </summary>
@@ -34,7 +36,7 @@ public class TimeController : MonoBehaviour {
 		kin = 1 + Mathf.Abs(dayMod);
 
 		CalculateCalendar ();
-		gameObject.GetComponent<CalendarController>().CalendarSet(kin - 1);
+		calendar.GetComponent<CalendarController>().CalendarSet(kin - 1);
 	}
 
 	void Update(){
@@ -71,7 +73,7 @@ public class TimeController : MonoBehaviour {
 	private void ProgressDay(int byNum) {
 		kin += Mathf.Abs(byNum);
 		CalculateCalendar ();
-		gameObject.GetComponent<CalendarController>().CalendarIncrement();
+		calendar.GetComponent<CalendarController>().CalendarIncrement();
 	}
 
 	/// <summary>
@@ -82,6 +84,5 @@ public class TimeController : MonoBehaviour {
 		tun = uinal / 18;
 		katun = tun / 20;
 		baktun = katun / 20;
-		//gameObject.GetComponent<CalendarController>().CalendarSet(kin);
 	}
 }
