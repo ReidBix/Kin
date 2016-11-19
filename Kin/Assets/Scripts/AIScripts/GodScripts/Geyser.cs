@@ -39,6 +39,7 @@ public class Geyser : MonoBehaviour {
 			}
 			break;
 		case States.damage:
+			GetComponent<SpriteRenderer> ().color = Color.red;
 			//Stuff we do during the damaging phase
 			currentCooldown -= Time.deltaTime;
 			if (age > duration) {
@@ -56,6 +57,7 @@ public class Geyser : MonoBehaviour {
 			break;
 		case States.fade:
 			//Stuff we do while fading
+			Destroy(gameObject);
 			//is there anything to do here? the world may never know
 			break;
 		default:

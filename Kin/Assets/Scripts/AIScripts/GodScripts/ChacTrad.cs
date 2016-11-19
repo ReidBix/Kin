@@ -8,6 +8,8 @@ public class ChacTrad : BaseGodAI {
 	float accuracy = 100;
 	float boltSpeed = 2.0f;
 	const float ANGLE_THRESHOLD = Mathf.PI/4;
+	Vector2 lastPlayerLoc;
+	float updateLoc = 0;
 	// Use this for initialization
 	protected override void Start () {
 		
@@ -15,10 +17,19 @@ public class ChacTrad : BaseGodAI {
 
 	// Update is called once per frame
 	protected override void Update () {
+		Debug.Log (lastPlayerLoc);
+		if (updateLoc >= .25f) {
+			lastPlayerLoc = targetObject.transform.position;
+			updateLoc = 0;
+		} else
+			updateLoc += Time.deltaTime;
+		
 		if (!boltOnCd) {
 			fireBolt (Random.Range(1,4));
 			boltOnCd = true;
 			fireBoltCd = 1.0f;
+			GameObject.Instantiate (Resources.Load ("Prefabs/Geyser", typeof(GameObject)), lastPlayerLoc, Quaternion.identity);
+
 		} else {
 			fireBoltCd -= Time.deltaTime;
 			if (fireBoltCd < 0.0f)
