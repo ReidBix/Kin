@@ -134,41 +134,30 @@ public class ChacAI : BaseGodAI
 	}
 	void fireBolt(int type) //lightning ranged attacks
     { 
-		GameObject newProj1, newProj2, newProj3, newProj4, newProj5, newProj6;
+		GameObject newProj;
 		float angle = predictLocation();
-        switch (type)
-        {
-            case 1: //triple shot
-                    //Instantiate projectile from prefab Instantiate(prefab,minionposition,no rotation)
-                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - .5f), boltSpeed * Mathf.Sin(angle - .5f));
-                newProj2 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj2.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
-                newProj3 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj3.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + .5f), boltSpeed * Mathf.Sin(angle + .5f));
-                break;
-            case 2: //single shot
-                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
-                break;
-            case 3: //circle shot
-                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - 1.0f), boltSpeed * Mathf.Sin(angle - 1.0f));
-                newProj2 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj2.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - .5f), boltSpeed * Mathf.Sin(angle - .5f));
-                newProj3 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj3.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
-                newProj4 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj4.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + .5f), boltSpeed * Mathf.Sin(angle + .5f));
-                newProj5 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj5.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + 1.0f), boltSpeed * Mathf.Sin(angle + 1.0f));
-                newProj6 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-                newProj6.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + 1.5f), boltSpeed * Mathf.Sin(angle + 1.5f));
-                break;
+		switch (type) {
+		case 1:
+			//Instantiate projectile from prefab Instantiate(prefab,minionposition,no rotation)
+			for (int a = 0; a <= 2; a++) {
+				newProj = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+				newProj.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - .5f + .5f * a), boltSpeed * Mathf.Sin(angle - .5f  + .5f * a));
+			}
+			break;
+		case 2:
+			newProj = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+			newProj.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
+			break;
+		case 3:
+			for (int a = 0; a <= 11; a++) {
+				newProj = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+				newProj.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - 3.0f + .5f * a), boltSpeed * Mathf.Sin(angle - 2.5f  + .5f * a));
+			}
+			break;
 
-            default:
-                return;
-        }
+		default:
+			return;
+		} 
 	}
 
 	protected float accuracyRand()
