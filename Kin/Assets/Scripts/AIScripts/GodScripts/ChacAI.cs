@@ -18,6 +18,8 @@ public class ChacAI : BaseGodAI
 	float accuracy = 100;
 	float boltSpeed = 2.0f;
 	const float ANGLE_THRESHOLD = Mathf.PI/4;
+	Vector2 lastPlayerLoc;
+	float updateLoc = 0;
 
 	//Set of AI behavior states
 	protected enum AIStates
@@ -44,6 +46,11 @@ public class ChacAI : BaseGodAI
 				    curState = AIStates.InvincibleState;
 			    break;
 		    case AIStates.InvincibleState:
+				if (updateLoc >= .25f) {
+					lastPlayerLoc = targetObject.transform.position;
+					updateLoc = 0;
+				} else
+					updateLoc += Time.deltaTime;
 			    int health = gameObject.GetComponent<EnemyHealth>().getHp();
 			    int maxHealth = gameObject.GetComponent<EnemyHealth>().maxHealth;
 			    if(health < maxHealth/3) //final invincible phase
@@ -119,6 +126,11 @@ public class ChacAI : BaseGodAI
 			    Debug.Log("Unknown state. Something be wrong mudda poop");
 			    break;
 		}
+	}
+
+	void fireGeyser()
+	{
+		GameObject.Instantiate (Resources.Load ("Prefabs/Geyser", typeof(GameObject)), lastPlayerLoc, Quaternion.identity);
 	}
 	void fireBolt(int type) //lightning ranged attacks
     { 
