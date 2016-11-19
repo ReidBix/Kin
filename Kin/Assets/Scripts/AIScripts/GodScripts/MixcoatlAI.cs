@@ -43,6 +43,10 @@ public class MixcoatlAI : BaseGodAI {
 			}
 			break;
 		case AIStates.SpearGathering:
+			//Move to spear (?)
+			//Get them spear (?)
+			//Wait ????
+			//Profit.
 			break;
 		case AIStates.BowStage:
 			break;
