@@ -39,118 +39,128 @@ public class ChacAI : BaseGodAI
 	{
 		switch(curState)
 		{
-		case AIStates.IdleState:
-			if (true)//some condition
-				curState = AIStates.InvincibleState;
-			break;
-		case AIStates.InvincibleState:
-			int health = gameObject.GetComponent<EnemyHealth>().getHp();
-			int maxHealth = gameObject.GetComponent<EnemyHealth>().maxHealth;
-			if(health < maxHealth/3) //final invincible phase
-			{
-				//lightning and geysers
-			}
-			else if(health < (2/3) * maxHealth) //2nd invincible phase
-			{
-				//lightning
-			}
-			else //first invincibility phase
-			{
-				//geysers
-			}
+		    case AIStates.IdleState:
+			    if (true)//some condition
+				    curState = AIStates.InvincibleState;
+			    break;
+		    case AIStates.InvincibleState:
+			    int health = gameObject.GetComponent<EnemyHealth>().getHp();
+			    int maxHealth = gameObject.GetComponent<EnemyHealth>().maxHealth;
+			    if(health < maxHealth/3) //final invincible phase
+			    {
+				    //lightning and geysers
+			    }
+			    else if(health < (2/3) * maxHealth) //2nd invincible phase
+			    {
+				    //lightning
+			    }
+			    else //first invincibility phase
+			    {
+				    //geysers
+			    }
 
-			if(invincCurrCd <= 0) //change to melee attacks after some time
-			{
-				curState = AIStates.MeleeState;
-				invincCurrCd = maxInvincCd;
-				//come down and shockwave
-			}
-			else
-				invincCurrCd -= Time.deltaTime;
-			break;
-		case AIStates.MeleeState:
-			float distance = Vector2.Distance((Vector2)targetObject.transform.position, (Vector2)gameObject.transform.position);
-			if(distance > meleeRange) //if too far for melee, then ranged attack
-			{
-				if (!rangedCd)
-				{
-					//attack ranged
-					rangedCd = true;
-				}
-				else //cooldown after shooting
-				{
-					if (rangedCurrCd <= 0)
-					{
-						rangedCurrCd = maxRangedCd;
-						rangedCd = false;
-					}
-					else
-						rangedCurrCd -= Time.deltaTime;
-				}
-			}
-			else
-			{
-				if(!meleeCd)
-				{
-					//attack melee
-					meleeCd = true;
-				}
-				else //cooldown after melee
-				{
-					if (meleeCurrCd <= 0)
-					{
-						meleeCurrCd = maxMeleeCd;
-						meleeCd = false;
-					}
-					else
-						meleeCurrCd -= Time.deltaTime;
-				}
-			}
-			break;
-		default:
-			Debug.Log("Unknown state. Something be wrong mudda poop");
-			break;
+			    if(invincCurrCd <= 0) //change to melee attacks after some time
+			    {
+				    curState = AIStates.MeleeState;
+				    invincCurrCd = maxInvincCd;
+				    //come down and shockwave
+			    }
+			    else
+				    invincCurrCd -= Time.deltaTime;
+			    break;
+		    case AIStates.MeleeState:
+			    float distance = Vector2.Distance((Vector2)targetObject.transform.position, (Vector2)gameObject.transform.position);
+			    if(distance > meleeRange) //if too far for melee, then ranged attack
+			    {
+				    if (!rangedCd)
+				    {
+                        //attack ranged
+                        System.Random rand = new System.Random();
+                        int randInt = rand.Next(0, 100);
+                        if (randInt < 70) //70% chance for single shot
+                            fireBolt(2);
+                        else if (randInt < 90) //20% chance for triple shot
+                            fireBolt(1);
+                        else //10% chance for circle shot
+                            fireBolt(3);
+					    rangedCd = true;
+				    }
+				    else //cooldown after shooting
+				    {
+					    if (rangedCurrCd <= 0)
+					    {
+						    rangedCurrCd = maxRangedCd;
+						    rangedCd = false;
+					    }
+					    else
+						    rangedCurrCd -= Time.deltaTime;
+				    }
+			    }
+			    else
+			    {
+				    if(!meleeCd)
+				    {
+					    //attack melee
+					    meleeCd = true;
+				    }
+				    else //cooldown after melee
+				    {
+					    if (meleeCurrCd <= 0)
+					    {
+						    meleeCurrCd = maxMeleeCd;
+						    meleeCd = false;
+					    }
+					    else
+						    meleeCurrCd -= Time.deltaTime;
+				    }
+			    }
+			    break;
+		    default:
+			    Debug.Log("Unknown state. Something be wrong mudda poop");
+			    break;
 		}
 	}
-	void fireBolt(int type){
+	void fireBolt(int type) //lightning ranged attacks
+    { 
 		GameObject newProj1, newProj2, newProj3, newProj4, newProj5, newProj6;
 		float angle = predictLocation();
-		switch (type) {
-		case 1:
-			//Instantiate projectile from prefab Instantiate(prefab,minionposition,no rotation)
-			newProj1 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle-.5f), boltSpeed * Mathf.Sin (angle-.5f));
-			newProj2 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj2.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
-			newProj3 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj3.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle+.5f), boltSpeed * Mathf.Sin (angle+.5f));
-			break;
-		case 2:
-			newProj1 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
-			break;
-		case 3:
-			newProj1 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle - 1.0f), boltSpeed * Mathf.Sin (angle - 1.0f));
-			newProj2 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj2.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle - .5f), boltSpeed * Mathf.Sin (angle - .5f));
-			newProj3 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj3.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
-			newProj4 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj4.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle + .5f), boltSpeed * Mathf.Sin (angle + .5f));
-			newProj5 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj5.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle + 1.0f), boltSpeed * Mathf.Sin (angle + 1.0f));
-			newProj6 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj6.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle + 1.5f), boltSpeed * Mathf.Sin (angle + 1.5f));
-			break;
+        switch (type)
+        {
+            case 1: //triple shot
+                    //Instantiate projectile from prefab Instantiate(prefab,minionposition,no rotation)
+                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - .5f), boltSpeed * Mathf.Sin(angle - .5f));
+                newProj2 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj2.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
+                newProj3 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj3.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + .5f), boltSpeed * Mathf.Sin(angle + .5f));
+                break;
+            case 2: //single shot
+                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
+                break;
+            case 3: //circle shot
+                newProj1 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj1.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - 1.0f), boltSpeed * Mathf.Sin(angle - 1.0f));
+                newProj2 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj2.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle - .5f), boltSpeed * Mathf.Sin(angle - .5f));
+                newProj3 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj3.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle), boltSpeed * Mathf.Sin(angle));
+                newProj4 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj4.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + .5f), boltSpeed * Mathf.Sin(angle + .5f));
+                newProj5 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj5.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + 1.0f), boltSpeed * Mathf.Sin(angle + 1.0f));
+                newProj6 = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+                newProj6.GetComponent<Rigidbody2D>().velocity = new Vector2(boltSpeed * Mathf.Cos(angle + 1.5f), boltSpeed * Mathf.Sin(angle + 1.5f));
+                break;
 
-		default:
-			return;
-		} 
-
+            default:
+                return;
+        }
 	}
 
-	protected float accuracyRand(){
+	protected float accuracyRand()
+    {
 		//Requirements for spread calculation
 		//accuracy = 0 -> spread = .5
 		//accuracy = infin -> spread = 0	
@@ -162,7 +172,8 @@ public class ChacAI : BaseGodAI
 		return Random.value*(mxval-mnval)+mnval;
 	}
 
-	protected float predictLocation(){
+	protected float predictLocation()
+    {
 		float C2 = (gameObject.transform.position.x-targetObject.transform.position.x);
 		float C3 = (targetObject.transform.position.y-gameObject.transform.position.y);
 		float C1 = ((targetObject.GetComponent<Rigidbody2D> ().velocity.y*C2 + targetObject.GetComponent<Rigidbody2D> ().velocity.x*C3)/boltSpeed);
@@ -185,5 +196,4 @@ public class ChacAI : BaseGodAI
 		//Debug.Log("("+lagangle+","+leading+","+overleadangle+")->"+angle+","+difference);
 		return angle;
 	}
-
 }
