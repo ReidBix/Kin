@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Geyser : MonoBehaviour {
-
+	
+	Animator geyserAnimator;
+	SpriteRenderer geyserRenderer;
 	public float delay;
 	public int damage;
 	public float duration;
@@ -39,7 +44,6 @@ public class Geyser : MonoBehaviour {
 			}
 			break;
 		case States.damage:
-			GetComponent<SpriteRenderer> ().color = Color.red;
 			//Stuff we do during the damaging phase
 			currentCooldown -= Time.deltaTime;
 			if (age > duration) {

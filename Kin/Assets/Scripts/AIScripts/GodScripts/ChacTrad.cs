@@ -9,7 +9,7 @@ public class ChacTrad : BaseGodAI {
 	float boltSpeed = 2.0f;
 	const float ANGLE_THRESHOLD = Mathf.PI/4;
 	Vector2 lastPlayerLoc;
-	float updateLoc = 0;
+	float updateLoc = 1.0f;
 	// Use this for initialization
 	protected override void Start () {
 		
@@ -27,8 +27,11 @@ public class ChacTrad : BaseGodAI {
 		if (!boltOnCd) {
 			fireBolt (Random.Range(1,4));
 			boltOnCd = true;
-			fireBoltCd = 1.0f;
-			GameObject.Instantiate (Resources.Load ("Prefabs/Geyser", typeof(GameObject)), lastPlayerLoc, Quaternion.identity);
+			fireBoltCd = 2.0f;
+			if (Random.Range(0,2) == 1)
+				GameObject.Instantiate (Resources.Load ("Prefabs/Geyser", typeof(GameObject)), new Vector2(lastPlayerLoc.x,lastPlayerLoc.y-.2f), Quaternion.identity);
+			else
+				GameObject.Instantiate (Resources.Load ("Prefabs/LightningBolt", typeof(GameObject)), new Vector2(lastPlayerLoc.x,lastPlayerLoc.y-.2f), Quaternion.identity);
 
 		} else {
 			fireBoltCd -= Time.deltaTime;
@@ -50,8 +53,8 @@ public class ChacTrad : BaseGodAI {
 			}
 			break;
 		case 2:
-			newProj1 = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
-			newProj1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
+			newProj = (GameObject)GameObject.Instantiate (Resources.Load ("Prefabs/MinionProj", typeof(GameObject)), gameObject.transform.position, Quaternion.identity);
+			newProj.GetComponent<Rigidbody2D> ().velocity = new Vector2 (boltSpeed * Mathf.Cos (angle), boltSpeed * Mathf.Sin (angle));
 			break;
 		case 3:
 			for (int a = 0; a <= 11; a++) {

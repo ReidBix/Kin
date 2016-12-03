@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b61a60debad56bf48a97eba4d9f06b9a
-timeCreated: 1480615078
+timeCreated: 1480798243
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -77,8 +77,8 @@ TextureImporter:
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -86,12 +86,12 @@ TextureImporter:
       name: Lightning Bolt Large_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 79
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -103,8 +103,8 @@ TextureImporter:
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -116,8 +116,8 @@ TextureImporter:
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -129,8 +129,8 @@ TextureImporter:
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -142,8 +142,8 @@ TextureImporter:
         y: 316
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -155,8 +155,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -168,8 +168,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -181,8 +181,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -194,8 +194,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -207,8 +207,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -220,8 +220,8 @@ TextureImporter:
         y: 120
         width: 80
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
