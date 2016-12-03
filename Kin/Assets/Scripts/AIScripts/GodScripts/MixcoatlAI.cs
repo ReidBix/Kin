@@ -20,6 +20,7 @@ public class MixcoatlAI : BaseGodAI {
 	EnemyHealth health;
 
 	GameObject[] coverObjects;
+	GameObject currentCover;
 
 	float spearThrowIntroCd,spearThrowOutroCd;
 	public float spearThrowIntroMaxCd, spearThrowOutroMaxCd;
@@ -35,6 +36,7 @@ public class MixcoatlAI : BaseGodAI {
 		spearThrowIntroCd = spearThrowIntroMaxCd;
 		spearThrowOutroCd = spearThrowOutroMaxCd;
 		spearThrown = false;
+		currentCover = null;
 	}
 	
 	// Update is called once per frame
@@ -48,6 +50,10 @@ public class MixcoatlAI : BaseGodAI {
 			}
 			break;
 		case AIStates.SpearShooting:
+			if (currentCover == null) {
+				int newCoverChoice = (int)(Random.Range (0, coverObjects.Length));
+				currentCover = coverObjects [newCoverChoice];
+			}
 			if (!spearThrown) {
 				spearThrowIntroCd -= Time.deltaTime;
 				if (spearThrowIntroCd <= 0) {
@@ -62,7 +68,11 @@ public class MixcoatlAI : BaseGodAI {
 						currState = AIStates.SpearGathering;
 						health.isVulnerable = true;
 					} else {
-						//MOVE TO NEW LOCATION
+						int newCoverChoice = (int)(Random.Range (0, coverObjects.Length));
+						while (coverObjects [newCoverChoice] == currentCover) {
+							newCoverChoice = (int)(Random.Range (0, coverObjects.Length));
+						}
+						currentCover = coverObjects [newCoverChoice];
 						spearThrowIntroCd = spearThrowIntroMaxCd;
 						spearThrowOutroCd = spearThrowOutroMaxCd;
 						spearThrown = false;
