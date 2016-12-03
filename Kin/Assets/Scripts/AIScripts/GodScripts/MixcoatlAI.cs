@@ -15,10 +15,15 @@ public class MixcoatlAI : BaseGodAI {
 	AIStates currState;
 	public float introDelay;
 	float introCooldown;
-	public int spears;
+	int spears;
+	public int NumberOfSpears;
 	EnemyHealth health;
 
 	GameObject[] coverObjects;
+
+	float spearThrowIntroCd,spearThrowOutroCd;
+	public float spearThrowIntroMaxCd, spearThrowOutroMaxCd;
+	bool spearThrown;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -26,6 +31,10 @@ public class MixcoatlAI : BaseGodAI {
 		introCooldown = introDelay;
 		coverObjects = GameObject.FindGameObjectsWithTag ("Cover");
 		health = gameObject.GetComponent<EnemyHealth> ();
+		spears = NumberOfSpears;
+		spearThrowIntroCd = spearThrowIntroMaxCd;
+		spearThrowOutroCd = spearThrowOutroMaxCd;
+		spearThrown = false;
 	}
 	
 	// Update is called once per frame
@@ -35,16 +44,30 @@ public class MixcoatlAI : BaseGodAI {
 			introCooldown -= Time.deltaTime;
 			if (introCooldown <= 0) {
 				currState = AIStates.SpearShooting;
+				health.isVulnerable = false;
 			}
 			break;
 		case AIStates.SpearShooting:
-			//IF READY TO SHOOT SPEARS
-			//MAKE SPEAR PROJECTILE + SHOOT IT
-			//spears--
-			if (spears <= 0) {
-				currState = AIStates.SpearGathering;
+			if (!spearThrown) {
+				spearThrowIntroCd -= Time.deltaTime;
+				if (spearThrowIntroCd <= 0) {
+					//throw spear
+					spears--;
+					spearThrown = true;
+				}
 			} else {
-				//MOVE TO NEW LOCATION
+				spearThrowOutroCd -= Time.deltaTime;
+				if (spearThrowOutroCd <= 0) {
+					if (spears <= 0) {
+						currState = AIStates.SpearGathering;
+						health.isVulnerable = true;
+					} else {
+						//MOVE TO NEW LOCATION
+						spearThrowIntroCd = spearThrowIntroMaxCd;
+						spearThrowOutroCd = spearThrowOutroMaxCd;
+						spearThrown = false;
+					}
+				}
 			}
 			break;
 		case AIStates.SpearGathering:
@@ -52,6 +75,14 @@ public class MixcoatlAI : BaseGodAI {
 			//Get them spear (?)
 			//Wait ????
 			//Profit.
+			if (spears == NumberOfSpears) {
+				if (health.getHp () / health.maxHealth < (2f / 3f)) {
+					currState = AIStates.BowStage;
+				} else {
+					currState = AIStates.SpearShooting;
+					health.isVulnerable = false;
+				}
+			}
 			break;
 		case AIStates.BowStage:
 			break;
