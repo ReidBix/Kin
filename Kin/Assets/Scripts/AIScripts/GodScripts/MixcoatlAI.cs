@@ -16,11 +16,16 @@ public class MixcoatlAI : BaseGodAI {
 	public float introDelay;
 	float introCooldown;
 	public int spears;
+	EnemyHealth health;
+
+	GameObject[] coverObjects;
 
 	// Use this for initialization
 	protected override void Start () {
 		currState = AIStates.Intro;
 		introCooldown = introDelay;
+		coverObjects = GameObject.FindGameObjectsWithTag ("Cover");
+		health = gameObject.GetComponent<EnemyHealth> ();
 	}
 	
 	// Update is called once per frame
