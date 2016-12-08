@@ -1,0 +1,6 @@
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\bin\Debug\Anim_Extractor.exe.config
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\bin\Debug\Anim_Extractor.exe
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\bin\Debug\Anim_Extractor.pdb
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\obj\Debug\Anim_Extractor.csprojResolveAssemblyReference.cache
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\obj\Debug\Anim_Extractor.exe
+C:\Users\Jay\OneDrive\Documents\UVa\SGD\Kin\Anim Extractor\Gif Decoder\obj\Debug\Anim_Extractor.pdb

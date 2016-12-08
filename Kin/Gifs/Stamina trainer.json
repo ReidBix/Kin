@@ -1,0 +1,158 @@
+{ "frames": {
+   "Stamina trainer 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 1.ase": {
+    "frame": { "x": 47, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 2.ase": {
+    "frame": { "x": 94, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 3.ase": {
+    "frame": { "x": 141, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 4.ase": {
+    "frame": { "x": 188, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 5.ase": {
+    "frame": { "x": 235, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 6.ase": {
+    "frame": { "x": 282, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 7.ase": {
+    "frame": { "x": 329, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 8.ase": {
+    "frame": { "x": 376, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 9.ase": {
+    "frame": { "x": 423, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 10.ase": {
+    "frame": { "x": 470, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 160
+   },
+   "Stamina trainer 11.ase": {
+    "frame": { "x": 517, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 160
+   },
+   "Stamina trainer 12.ase": {
+    "frame": { "x": 564, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 160
+   },
+   "Stamina trainer 13.ase": {
+    "frame": { "x": 611, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 160
+   },
+   "Stamina trainer 14.ase": {
+    "frame": { "x": 658, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 160
+   },
+   "Stamina trainer 15.ase": {
+    "frame": { "x": 705, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 16.ase": {
+    "frame": { "x": 752, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 130
+   },
+   "Stamina trainer 17.ase": {
+    "frame": { "x": 799, "y": 0, "w": 47, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 47, "h": 60 },
+    "sourceSize": { "w": 47, "h": 60 },
+    "duration": 200
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.9",
+  "format": "RGBA8888",
+  "size": { "w": 846, "h": 60 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "Talking", "from": 6, "to": 17, "direction": "forward" }
+  ]
+ }
+}

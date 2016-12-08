@@ -1,0 +1,6 @@
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\bin\Debug\Gif Decoder.exe.config
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\bin\Debug\Gif Decoder.exe
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\bin\Debug\Gif Decoder.pdb
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\obj\Debug\Gif Decoder.csprojResolveAssemblyReference.cache
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\obj\Debug\Gif Decoder.exe
+C:\Users\Jay\OneDrive\Documents\UVa\2016 Fall\CS 4710\HW 1\Gif Decoder\Gif Decoder\obj\Debug\Gif Decoder.pdb

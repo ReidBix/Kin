@@ -1,0 +1,76 @@
+{ "frames": {
+   "Placeholder Corn 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 1.ase": {
+    "frame": { "x": 32, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 2.ase": {
+    "frame": { "x": 64, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 3.ase": {
+    "frame": { "x": 96, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 4.ase": {
+    "frame": { "x": 128, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 5.ase": {
+    "frame": { "x": 160, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 6.ase": {
+    "frame": { "x": 192, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   },
+   "Placeholder Corn 7.ase": {
+    "frame": { "x": 224, "y": 0, "w": 32, "h": 80 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 32, "h": 80 },
+    "sourceSize": { "w": 32, "h": 80 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.9",
+  "format": "RGBA8888",
+  "size": { "w": 256, "h": 80 },
+  "scale": "1",
+  "frameTags": [
+  ]
+ }
+}

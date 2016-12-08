@@ -1,0 +1,78 @@
+{ "frames": {
+   "dragon thing 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 1.ase": {
+    "frame": { "x": 104, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 2.ase": {
+    "frame": { "x": 208, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 3.ase": {
+    "frame": { "x": 312, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 4.ase": {
+    "frame": { "x": 416, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 5.ase": {
+    "frame": { "x": 520, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 6.ase": {
+    "frame": { "x": 624, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   },
+   "dragon thing 7.ase": {
+    "frame": { "x": 728, "y": 0, "w": 104, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 104, "h": 41 },
+    "sourceSize": { "w": 104, "h": 41 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.9",
+  "format": "RGBA8888",
+  "size": { "w": 832, "h": 41 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Run", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "idle", "from": 6, "to": 7, "direction": "forward" }
+  ]
+ }
+}

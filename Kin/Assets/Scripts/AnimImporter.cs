@@ -44,8 +44,8 @@ public class AnimImporter : MonoBehaviour {
         
         // for each clip, adjust frames
         foreach (AnimationClip aC in AnimationUtility.GetAnimationClips(go)) {
-            EditorCurveBinding[] ecb = AnimationUtility.GetCurveBindings(aC);
-            Debug.Log(ecb);
+            //EditorCurveBinding[] ecb = AnimationUtility.GetCurveBindings(aC);
+            
             //AnimationUtility.GetObjectReferenceCurve(aC, ecb);
             AnimationEvent[] events = AnimationUtility.GetAnimationEvents(aC);
             Debug.Log(aC.name + ":" + events.Length);

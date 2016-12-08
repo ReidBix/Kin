@@ -1,0 +1,447 @@
+{ "frames": {
+   "Strength trainer 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 1.ase": {
+    "frame": { "x": 52, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 2.ase": {
+    "frame": { "x": 104, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 3.ase": {
+    "frame": { "x": 156, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 4.ase": {
+    "frame": { "x": 208, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 5.ase": {
+    "frame": { "x": 260, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 6.ase": {
+    "frame": { "x": 312, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 7.ase": {
+    "frame": { "x": 364, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 8.ase": {
+    "frame": { "x": 416, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 200
+   },
+   "Strength trainer 9.ase": {
+    "frame": { "x": 468, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 10.ase": {
+    "frame": { "x": 520, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 11.ase": {
+    "frame": { "x": 572, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 12.ase": {
+    "frame": { "x": 624, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 13.ase": {
+    "frame": { "x": 676, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 14.ase": {
+    "frame": { "x": 728, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 15.ase": {
+    "frame": { "x": 780, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 16.ase": {
+    "frame": { "x": 832, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 17.ase": {
+    "frame": { "x": 884, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 165
+   },
+   "Strength trainer 18.ase": {
+    "frame": { "x": 936, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 300
+   },
+   "Strength trainer 19.ase": {
+    "frame": { "x": 988, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 200
+   },
+   "Strength trainer 20.ase": {
+    "frame": { "x": 1040, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 21.ase": {
+    "frame": { "x": 1092, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 22.ase": {
+    "frame": { "x": 1144, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 23.ase": {
+    "frame": { "x": 1196, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 24.ase": {
+    "frame": { "x": 1248, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 25.ase": {
+    "frame": { "x": 1300, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 26.ase": {
+    "frame": { "x": 1352, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 300
+   },
+   "Strength trainer 27.ase": {
+    "frame": { "x": 1404, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 200
+   },
+   "Strength trainer 28.ase": {
+    "frame": { "x": 1456, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 180
+   },
+   "Strength trainer 29.ase": {
+    "frame": { "x": 1508, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 30.ase": {
+    "frame": { "x": 1560, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 31.ase": {
+    "frame": { "x": 1612, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 32.ase": {
+    "frame": { "x": 1664, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 33.ase": {
+    "frame": { "x": 1716, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 34.ase": {
+    "frame": { "x": 1768, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 200
+   },
+   "Strength trainer 35.ase": {
+    "frame": { "x": 1820, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 36.ase": {
+    "frame": { "x": 1872, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 37.ase": {
+    "frame": { "x": 1924, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 38.ase": {
+    "frame": { "x": 1976, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 39.ase": {
+    "frame": { "x": 2028, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 40.ase": {
+    "frame": { "x": 2080, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 41.ase": {
+    "frame": { "x": 2132, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 42.ase": {
+    "frame": { "x": 2184, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 43.ase": {
+    "frame": { "x": 2236, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 44.ase": {
+    "frame": { "x": 2288, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 45.ase": {
+    "frame": { "x": 2340, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 46.ase": {
+    "frame": { "x": 2392, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 47.ase": {
+    "frame": { "x": 2444, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 48.ase": {
+    "frame": { "x": 2496, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 49.ase": {
+    "frame": { "x": 2548, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 50.ase": {
+    "frame": { "x": 2600, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 51.ase": {
+    "frame": { "x": 2652, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 52.ase": {
+    "frame": { "x": 2704, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   },
+   "Strength trainer 53.ase": {
+    "frame": { "x": 2756, "y": 0, "w": 52, "h": 60 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 52, "h": 60 },
+    "sourceSize": { "w": 52, "h": 60 },
+    "duration": 120
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.9",
+  "format": "I8",
+  "size": { "w": 2808, "h": 60 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Idle", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "Talking", "from": 8, "to": 18, "direction": "forward" },
+   { "name": "Flex", "from": 19, "to": 34, "direction": "forward" }
+  ]
+ }
+}
