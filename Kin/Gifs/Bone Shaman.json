@@ -472,12 +472,13 @@
   "scale": "1",
   "frameTags": [
    { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
-   { "name": "idle_break", "from": 6, "to": 17, "direction": "forward" },
-   { "name": "recoil", "from": 18, "to": 20, "direction": "forward" },
-   { "name": "walk", "from": 21, "to": 26, "direction": "forward" },
-   { "name": "attack1", "from": 27, "to": 35, "direction": "forward" },
-   { "name": "attack2", "from": 36, "to": 44, "direction": "forward" },
-   { "name": "Die", "from": 45, "to": 56, "direction": "forward" }
+   { "name": "Idle_Break", "from": 6, "to": 17, "direction": "forward" },
+   { "name": "Recoil", "from": 18, "to": 20, "direction": "forward" },
+   { "name": "Walk", "from": 21, "to": 26, "direction": "forward" },
+   { "name": "Shoot", "from": 27, "to": 35, "direction": "forward" },
+   { "name": "Staff_Wave", "from": 36, "to": 44, "direction": "forward" },
+   { "name": "Die", "from": 45, "to": 55, "direction": "forward" },
+   { "name": "Dead", "from": 56, "to": 56, "direction": "forward" }
   ]
  }
 }

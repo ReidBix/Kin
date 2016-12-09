@@ -151,8 +151,10 @@
   "size": { "w": 846, "h": 60 },
   "scale": "1",
   "frameTags": [
-   { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
-   { "name": "Talking", "from": 6, "to": 17, "direction": "forward" }
+   { "name": "stam_idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "stam_talk_start", "from": 6, "to": 8, "direction": "forward" },
+   { "name": "stam_talk_loop", "from": 9, "to": 14, "direction": "forward" },
+   { "name": "stam_talk_exit", "from": 15, "to": 17, "direction": "forward" }
   ]
  }
 }

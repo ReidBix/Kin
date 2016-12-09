@@ -655,16 +655,16 @@
   "size": { "w": 10368, "h": 112 },
   "scale": "1",
   "frameTags": [
-   { "name": "idle", "from": 0, "to": 5, "direction": "forward" },
-   { "name": "recoil", "from": 6, "to": 8, "direction": "forward" },
-   { "name": "attack1", "from": 9, "to": 20, "direction": "forward" },
-   { "name": "attack2", "from": 21, "to": 38, "direction": "forward" },
-   { "name": "attack1 rev", "from": 39, "to": 50, "direction": "forward" },
-   { "name": "release", "from": 51, "to": 58, "direction": "forward" },
-   { "name": "idle invisible", "from": 59, "to": 64, "direction": "forward" },
-   { "name": "attack3", "from": 65, "to": 70, "direction": "forward" },
-   { "name": "recoil inv", "from": 71, "to": 73, "direction": "forward" },
-   { "name": "choke", "from": 74, "to": 80, "direction": "forward" }
+   { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "Recoil", "from": 6, "to": 8, "direction": "forward" },
+   { "name": "FrontHand", "from": 9, "to": 20, "direction": "forward" },
+   { "name": "SpawnMinion", "from": 21, "to": 38, "direction": "forward" },
+   { "name": "BackHand", "from": 39, "to": 50, "direction": "forward" },
+   { "name": "Release_Noose", "from": 51, "to": 58, "direction": "forward" },
+   { "name": "Idle_Invisible", "from": 59, "to": 64, "direction": "forward" },
+   { "name": "Skull_Spark", "from": 65, "to": 70, "direction": "forward" },
+   { "name": "Recoil_Invisible", "from": 71, "to": 73, "direction": "forward" },
+   { "name": "Choke", "from": 74, "to": 80, "direction": "forward" }
   ]
  }
 }

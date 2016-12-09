@@ -439,9 +439,11 @@
   "size": { "w": 2808, "h": 60 },
   "scale": "1",
   "frameTags": [
-   { "name": "Idle", "from": 0, "to": 7, "direction": "forward" },
-   { "name": "Talking", "from": 8, "to": 18, "direction": "forward" },
-   { "name": "Flex", "from": 19, "to": 34, "direction": "forward" }
+   { "name": "stren_idle", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "stren_talk_start", "from": 8, "to": 10, "direction": "forward" },
+   { "name": "stren_talk_loop", "from": 11, "to": 15, "direction": "forward" },
+   { "name": "stren_talk_exit", "from": 16, "to": 18, "direction": "forward" },
+   { "name": "stren_break", "from": 19, "to": 34, "direction": "forward" }
   ]
  }
 }

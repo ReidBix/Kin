@@ -455,13 +455,14 @@
   "size": { "w": 3584, "h": 64 },
   "scale": "1",
   "frameTags": [
-   { "name": "idle", "from": 0, "to": 6, "direction": "forward" },
+   { "name": "Idle", "from": 0, "to": 6, "direction": "forward" },
    { "name": "idle_break", "from": 7, "to": 16, "direction": "forward" },
    { "name": "recoil", "from": 17, "to": 19, "direction": "forward" },
    { "name": "walk", "from": 20, "to": 25, "direction": "forward" },
    { "name": "attack1", "from": 26, "to": 35, "direction": "forward" },
    { "name": "attack2", "from": 36, "to": 46, "direction": "forward" },
-   { "name": "Die", "from": 47, "to": 55, "direction": "forward" }
+   { "name": "Die", "from": 47, "to": 54, "direction": "forward" },
+   { "name": "dead", "from": 55, "to": 55, "direction": "forward" }
   ]
  }
 }

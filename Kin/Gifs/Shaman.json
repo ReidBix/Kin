@@ -463,13 +463,14 @@
   "size": { "w": 4104, "h": 64 },
   "scale": "1",
   "frameTags": [
-   { "name": "idle", "from": 0, "to": 4, "direction": "forward" },
-   { "name": "idle_break", "from": 5, "to": 17, "direction": "forward" },
-   { "name": "recoil", "from": 18, "to": 20, "direction": "forward" },
-   { "name": "walk", "from": 21, "to": 26, "direction": "forward" },
-   { "name": "attack1", "from": 27, "to": 36, "direction": "forward" },
-   { "name": "attack2", "from": 37, "to": 46, "direction": "forward" },
-   { "name": "Die", "from": 47, "to": 55, "direction": "forward" }
+   { "name": "Idle", "from": 0, "to": 4, "direction": "forward" },
+   { "name": "Idle_Break", "from": 5, "to": 17, "direction": "forward" },
+   { "name": "Recoil", "from": 18, "to": 20, "direction": "forward" },
+   { "name": "Walk", "from": 21, "to": 26, "direction": "forward" },
+   { "name": "Attack1", "from": 27, "to": 36, "direction": "forward" },
+   { "name": "Ground_Pound", "from": 37, "to": 46, "direction": "forward" },
+   { "name": "Die", "from": 47, "to": 54, "direction": "forward" },
+   { "name": "Dead", "from": 55, "to": 55, "direction": "forward" }
   ]
  }
 }

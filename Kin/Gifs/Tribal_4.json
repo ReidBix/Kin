@@ -151,9 +151,9 @@
   "size": { "w": 576, "h": 64 },
   "scale": "1",
   "frameTags": [
-   { "name": "idle", "from": 0, "to": 5, "direction": "forward" },
-   { "name": "idle break", "from": 6, "to": 10, "direction": "forward" },
-   { "name": "walk", "from": 11, "to": 16, "direction": "forward" }
+   { "name": "Idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "Idle_Break", "from": 6, "to": 10, "direction": "forward" },
+   { "name": "Walk", "from": 11, "to": 16, "direction": "forward" }
   ]
  }
 }

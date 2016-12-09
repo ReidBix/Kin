@@ -183,8 +183,10 @@
   "size": { "w": 946, "h": 55 },
   "scale": "1",
   "frameTags": [
-   { "name": "Idle", "from": 0, "to": 6, "direction": "forward" },
-   { "name": "Talking", "from": 7, "to": 21, "direction": "forward" }
+   { "name": "wise_idle", "from": 0, "to": 6, "direction": "forward" },
+   { "name": "wise_talk_start", "from": 7, "to": 10, "direction": "forward" },
+   { "name": "wise_talk_loop", "from": 11, "to": 17, "direction": "forward" },
+   { "name": "wise_talk_exit", "from": 18, "to": 21, "direction": "forward" }
   ]
  }
 }

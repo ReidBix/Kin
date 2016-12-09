@@ -151,10 +151,10 @@
   "size": { "w": 576, "h": 64 },
   "scale": "1",
   "frameTags": [
-   { "name": "idle", "from": 0, "to": 5, "direction": "forward" },
-   { "name": "talk_start", "from": 6, "to": 9, "direction": "forward" },
-   { "name": "talk", "from": 10, "to": 13, "direction": "forward" },
-   { "name": "talk_stop", "from": 14, "to": 17, "direction": "forward" }
+   { "name": "heal_idle", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "heal_talk_start", "from": 6, "to": 9, "direction": "forward" },
+   { "name": "heal_talk_loop", "from": 10, "to": 13, "direction": "forward" },
+   { "name": "heal_talk_stop", "from": 14, "to": 17, "direction": "forward" }
   ]
  }
 }
