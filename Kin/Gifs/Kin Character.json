@@ -2551,6 +2551,7 @@
    { "name": "Dead_Down", "from": 28, "to": 28, "direction": "forward" },
    { "name": "Draw_Down", "from": 29, "to": 34, "direction": "forward" },
    { "name": "Idle_Down_Sword", "from": 35, "to": 40, "direction": "forward" },
+   { "name": "Recoil_Down_Sword", "from": 41, "to": 43, "direction": "forward" },
    { "name": "Walk_Down_Sword", "from": 44, "to": 49, "direction": "forward" },
    { "name": "Roll_Down_Sword", "from": 50, "to": 55, "direction": "forward" },
    { "name": "Attack_Combo_Down", "from": 56, "to": 78, "direction": "forward" },

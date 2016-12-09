@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Input;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -10,10 +9,13 @@ using System.Diagnostics;
 namespace Anim_Reader {
     class Prgm {
         public static bool debug = false;
-        public static string baseLoc = (debug) ? "C:/Users/Jay/OneDrive/Documents/UVA/SGD/Kin/Kin/Gifs" : Directory.GetCurrentDirectory();
+        public static string baseLoc;
+        static Prgm() {
+            baseLoc = (debug) ? "C:/Users/Jay/OneDrive/Documents/UVA/SGD/Kin/Kin/Gifs"
+                : Directory.GetCurrentDirectory();
+        }
         static void Main(string[] args) {
             AseReader.extractAse();
-            //AseReader.importFromJSON();
         }
 
         public static void pause() {
@@ -94,8 +96,6 @@ namespace Anim_Reader {
             return b == 0 ? a : GCD(b, a % b);
         }
     }
-
-
     class Gif_Decoder {
         
         /// <summary>
@@ -146,7 +146,6 @@ namespace Anim_Reader {
             }
         }
     }
-    
     static class LinqHelper {
         public static T[] SubArray<T>(this T[] data, int index, int length) {
             T[] result = new T[length];
@@ -156,13 +155,12 @@ namespace Anim_Reader {
     }
 
     static class AseReader {
-        static string kinLoc = Prgm.baseLoc.Substring(0,Prgm.baseLoc.LastIndexOf("Kin/"));
-        public static string asepriteLoc = "C:/Program Files (x86)/Aseprite/";
-
-        public static void importFromJSON() {
-
+        static string kinLoc, asepriteLoc;
+        static AseReader() {
+            kinLoc = Prgm.baseLoc.Substring(0, Prgm.baseLoc.LastIndexOf("Kin"+
+                (Prgm.baseLoc.Contains("/") ? "/" : "\\")));
+            asepriteLoc = "C:/Program Files (x86)/Aseprite/";
         }
-
         public static void extractAse() {
             while (true) {
                 Console.WriteLine("Is aseprite installed in the default location? (y/n)");
